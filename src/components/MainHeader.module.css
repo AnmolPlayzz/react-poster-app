@@ -35,3 +35,16 @@
 .button:hover {
   background-color: #f76caf;
 }
+
+@media only screen and (max-width: 620px) {
+  .header {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .button {
+    padding: 0.25rem 0.75rem;
+  }
+}

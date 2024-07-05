@@ -1,10 +1,26 @@
 .posts {
-    list-style: none;
-    max-width: 50rem;
-    margin: 1rem auto;
-    padding: 1rem 0;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: center;
+  list-style: none;
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+}
+
+@media only screen and (max-width: 620px) {
+  .posts {
+    width: 100%;
+    margin: 1rem 0;
+
+    max-width: unset;
+    grid-template-columns: repeat(2, 40%);
   }
+}
+
+@media only screen and (max-width: 450px) {
+  .posts {
+    grid-template-columns: repeat(1, 90%);
+  }
+}

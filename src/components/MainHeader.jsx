@@ -10,10 +10,14 @@ function MainHeader({ onCreatePost }) {
         React Poster
       </h1>
       <p>
+        {/*
         <Link className={classes.button} to="/post">
           <MdPostAdd size={18} />
           New Post
         </Link>
+        */
+        }
+        Posting paused
       </p>
     </header>
   );

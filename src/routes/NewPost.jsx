@@ -22,11 +22,11 @@ function NewPost(props) {
             <Form method="POST" className={classes.form}>
                 <p>
                     <label htmlFor="body">Text</label> 
-                    <textarea id="body" required rows={3} name='body'/>
+                    <textarea id="body" required rows={3} name='body' maxLength="200"/>
                 </p>
                 <p>
                     <label htmlFor="name">Your name</label>
-                    <input type="text" id="name" name='author' required />
+                    <input type="text" id="name" name='author' maxLength="20" required />
                 </p>
                 <p className={classes.actions}>
                     <Link to="..">

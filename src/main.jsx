@@ -6,7 +6,7 @@ import './index.css'
 import NewPost, { action as newPostAction } from './routes/NewPost'
 import RootLayout from './routes/RootLayout'
 import PostDetails, { loader as postIdLoader } from './routes/PostDetails'
-
+import { Analytics } from "@vercel/analytics/react"
 const routerObj = createBrowserRouter([
 
   {
@@ -37,5 +37,6 @@ const routerObj = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={routerObj} />
+    <Analytics />
   </React.StrictMode>
 )

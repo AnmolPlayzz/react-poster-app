@@ -1,6 +1,6 @@
 .details {
   padding: 1rem;
-  width: 30rem;
+  width: fit-content;
   background: #232323;
 }
 

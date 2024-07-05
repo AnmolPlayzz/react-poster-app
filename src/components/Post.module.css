@@ -17,6 +17,7 @@
   color: #ffffff;
   margin: 0;
   text-transform: uppercase;
+  line-break: anywhere;
 }
 
 .text {
@@ -25,6 +26,7 @@
   margin: 0.25rem 0 0 0;
   color: #ffffff;
   font-style: italic;
+  line-break: anywhere;
 }
 
 @keyframes animate-in {

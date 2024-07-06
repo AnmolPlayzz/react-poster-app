@@ -45,7 +45,7 @@ export default NewPost;
 export async function action({request}) {
     const formData = await request.formData()
     const postData = Object.fromEntries(formData)
-    await fetch("https://polybotapi.ddns.net/posts", {
+    await fetch("https://polybotapi.ddns.net/posts/create", {
         method: "POST",
         body: JSON.stringify(postData),
         headers: {
